@@ -28,7 +28,7 @@
 uboot-k1工具：[下载](https://ci.deepin.com/repo/deepin/deepin-ports/cdimage/latest/riscv64/bootloaders/)
 
 镜像烧录可使用[Titan Flasher](https://cloud.spacemit.com/prod-api/release/download/tools?token=titantools_for_windows_X86_X64)工具进行烧录
-过程可参考前一篇安装笔记，[传送门](https://github.com/seig000/Test-for-Installing-Deepin-on-LicheePi-Module-3A/)
+过程可参考前一篇安装笔记: [传送门](https://github.com/seig000/Test-for-Installing-Deepin-on-LicheePi-Module-3A/)
 
 
 ## 二、开机
@@ -58,7 +58,8 @@ uboot-k1工具：[下载](https://ci.deepin.com/repo/deepin/deepin-ports/cdimage
 
 **浏览器播放**
 
-Firefox 视频播放： bilibili 视频播放画面卡顿严重，出现音频正常播放画面停顿的现象
+Firefox 版本 131.0.3-1deepin1 riscv64
+视频播放： bilibili 视频播放画面卡顿严重，出现音频正常播放画面停顿的现象
 
 **办公软件使用**
 
