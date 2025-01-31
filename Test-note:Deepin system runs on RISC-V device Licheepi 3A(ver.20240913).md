@@ -70,9 +70,10 @@ Firfox 视频播放： bilibili 视频播放画面卡顿严重，出现音频正
 考虑可能是因为板卡内存较小，所设置的 swap 文件较大，导致内存不足，从而出现了日志占用、打不开桌面端的问题
 
 swapfile size :16G
+
 ![swapfile大小](pictures/42.png)
 
-检查一下空间占用情况：
+检查空间占用情况：
 
 ![空间占用情况](pictures/42.png)
 
