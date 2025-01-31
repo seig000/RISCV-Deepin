@@ -8,9 +8,11 @@
 **实体工具**
 
 <ul>
-<li>设备： LicheePi 3A </li>[板卡介绍](https://wiki.sipeed.com/hardware/zh/lichee/K1/lpi3a/1_intro.html)
+<li>设备： LicheePi 3A </li> 
+  板卡介绍 :https://wiki.sipeed.com/hardware/zh/lichee/K1/lpi3a/1_intro.html
 <li>串口调试工具：RV DebuggerPlus </li>
-连接方法参考[sipeed文档](https://wiki.sipeed.com/hardware/zh/lichee/K1/lpi3a/4_peripheral.html)
+连接方法参考 sipeed 文档:
+  https://wiki.sipeed.com/hardware/zh/lichee/K1/lpi3a/4_peripheral.html
   
 <li>电源适配器</li>
 </ul> 
