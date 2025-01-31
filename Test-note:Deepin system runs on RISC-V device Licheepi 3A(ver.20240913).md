@@ -7,17 +7,23 @@
 
 **实体工具**
 
-设备： LicheePi 3A [板卡介绍](https://wiki.sipeed.com/hardware/zh/lichee/K1/lpi3a/1_intro.html)
-串口调试工具：RV DebuggerPlus 
-连接方法参考
+<ul>
+<li>设备： LicheePi 3A [板卡介绍](https://wiki.sipeed.com/hardware/zh/lichee/K1/lpi3a/1_intro.html)</li>
+<li>串口调试工具：RV DebuggerPlus </li>
+连接方法参考[sipeed文档](https://wiki.sipeed.com/hardware/zh/lichee/K1/lpi3a/4_peripheral.html)
+  
+<li>电源适配器</li>
+</ul> 
 
 **软件工具**
 
 镜像:[版本20240913](https://ci.deepin.com/repo/deepin/deepin-ports/cdimage/latest/riscv64/)
-(注：即deepin-ports/cdimage/latest/riscv64下, k1 最近latest的版本）
+
+(注：即 deepin-ports/cdimage/latest/riscv64 下, k1 的 latest 版本）
 uboot-k1工具：[下载](https://ci.deepin.com/repo/deepin/deepin-ports/cdimage/latest/riscv64/bootloaders/)
-镜像烧录方面可使用Titian工具进行烧录，过程参考前面一篇的安装文档，[传送门](https://github.com/seig000/Test-for-Installing-Deepin-on-LicheePi-Module-3A/)
-（还是推荐使用fastboot工具进行烧录，烧录参考）
+
+镜像烧录可使用[Titan Flasher](https://cloud.spacemit.com/prod-api/release/download/tools?token=titantools_for_windows_X86_X64)工具进行烧录，过程参考前一篇安装笔记，[传送门](https://github.com/seig000/Test-for-Installing-Deepin-on-LicheePi-Module-3A/)
+
 
 ## 二、开机
 
