@@ -1,6 +1,7 @@
 ### Deepin 系统在RISC-V设备 LicheePi 3A 运行测试笔记（cdimage ver.20240913）
 
-这是一份对 Deepin 操作系统在 RISC-V 设备 LicheePi 3A 上运行情况的基础测试
+这是一份对 Deepin 操作系统在 RISC-V 设备 LicheePi 3A 上运行情况的基础测试记录
+
 主要内容包括：工具准备、开机情况、桌面使用测试及开启 swapfile 后遇到的无法进入图形界面的处理记录
 
 ## 一、工具准备
