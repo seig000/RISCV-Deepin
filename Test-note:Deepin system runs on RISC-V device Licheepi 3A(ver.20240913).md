@@ -24,9 +24,11 @@
 镜像:[deepin-23-beige-preview-riscv64-k1-20240913](https://ci.deepin.com/repo/deepin/deepin-ports/cdimage/latest/riscv64/)
 
 (注：即 deepin-ports/cdimage/latest/riscv64 下, k1 的 latest 版本）
+
 uboot-k1工具：[下载](https://ci.deepin.com/repo/deepin/deepin-ports/cdimage/latest/riscv64/bootloaders/)
 
-镜像烧录可使用[Titan Flasher](https://cloud.spacemit.com/prod-api/release/download/tools?token=titantools_for_windows_X86_X64)工具进行烧录，过程参考前一篇安装笔记，[传送门](https://github.com/seig000/Test-for-Installing-Deepin-on-LicheePi-Module-3A/)
+镜像烧录可使用[Titan Flasher](https://cloud.spacemit.com/prod-api/release/download/tools?token=titantools_for_windows_X86_X64)工具进行烧录
+过程可参考前一篇安装笔记，[传送门](https://github.com/seig000/Test-for-Installing-Deepin-on-LicheePi-Module-3A/)
 
 
 ## 二、开机
