@@ -2,7 +2,6 @@
 
 这是一份对 Deepin 操作系统在 RISC-V 设备 LicheePi 3A 上运行情况的基础测试
 主要内容包括：工具准备、开机情况、桌面使用测试及开启 swapfile 后遇到的无法进入图形界面的处理记录
-(2025.1.31注：桌面测试部分情况&视频测试情况会在节后更新)
 
 ## 一、工具准备
 
@@ -33,10 +32,13 @@ uboot-k1工具：[下载](https://ci.deepin.com/repo/deepin/deepin-ports/cdimage
 ## 二、开机
 
 正常烧录成功开机，通过putty软件串口查看开机日志中存在部分FAILED：
+
 ![开机日志1](pictures/1.png)
 ![开机日志2](pictures/2.png)
 
-*未对软件包 update 的情况下开机在桌面中会出现多个 Tray Plugin Crashed 提示
+*初次开机，未对软件包进行更新的情况下，开机在桌面中会出现多个 Tray Plugin Crashed 提示，对软件包进行更新后续开机提示消失
+
+![开机bug](pictures/3.png)
 
 ## 三、桌面操作
 
@@ -44,7 +46,7 @@ uboot-k1工具：[下载](https://ci.deepin.com/repo/deepin/deepin-ports/cdimage
 
 鼠标光标存在轻微闪烁情况，在资源管理文件夹窗口、应用窗口界面较为明显
 窗口操作基本正常
-
+壁纸可正常更换、个性化桌面可正常设置
 
 **音频播放**：
 
@@ -52,18 +54,28 @@ uboot-k1工具：[下载](https://ci.deepin.com/repo/deepin/deepin-ports/cdimage
 
 本地音频播放情况：轻微卡顿，置于后台时卡顿明显
 
-Firfox 视频播放： bilibili 视频播放画面卡顿严重，出现音频正常播放画面停顿的现象
+**浏览器播放**
+
+Firefox 视频播放： bilibili 视频播放画面卡顿严重，出现音频正常播放画面停顿的现象
+
+**办公软件使用**
+
+libreoffice 版本 4：24.2.0-1deepin2 riscv64
+卡顿较为严重，其中 libreoffice write 软件工具栏出现持续性闪烁现象
 
 ## 四、其它
 
-借这篇笔记记录一个在使用过程中遇到一个问题：
+尝试进行系统更新，更新进度一直卡在 70% 无法完成更新
+
+另：记录一个在使用过程中遇到一个问题：
 
 **问题描述** 
 
-在更新过软件包并且添加 swap 文件（swap文件添加方法参考Deepin论坛[帖子](https://bbs.deepin.org/post/236642)）后，图形界面开机输入用户密码按下 enter 之后无法进入桌面端，强制进入uboot重启流程
-使用串口工具进行检查，输入密码可以正常进入系统但出现如下报错内容：
+在更新过软件包并且添加 swap 文件（swap 文件添加方法参考[Deepin论坛帖子](https://bbs.deepin.org/post/236642),可不进行帖子中“第七步”）后，图形界面开机后在用户登录界面输入用户密码按下 enter 之后无法正常进入图形桌面端，强制进行uboot重启进程，重启后出现用户登录界面，循环
+使用串口工具从命令行进行进行检查，输入密码可以正常进入系统但出现如下报错内容：
 
 ![内容报错](pictures/41.png)
+
 
 **问题处理记录**
 
@@ -75,8 +87,15 @@ swapfile size :16G
 
 检查空间占用情况：
 
-![空间占用情况](pictures/42.png)
+![空间占用情况](pictures/43.png)
 
 尝试缩小一下 swapfile 大小
 
-![缩小swapfile](pictures/43.png)
+![缩小swapfile](pictures/44.png)
+
+检查空间占用情况
+
+![缩小swapfile](pictures/45.png)
+
+重新启动，可以正常进入桌面了，串口命令行界面也没有出现日志信息报错了
+
