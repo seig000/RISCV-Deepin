@@ -48,7 +48,9 @@ uboot-k1工具：[下载](https://ci.deepin.com/repo/deepin/deepin-ports/cdimage
 **桌面使用**：
 
 鼠标光标存在轻微闪烁情况，在资源管理文件夹窗口、应用窗口界面较为明显
+
 窗口操作基本正常
+
 壁纸可正常更换、个性化桌面可正常设置
 
 **音频播放**：
