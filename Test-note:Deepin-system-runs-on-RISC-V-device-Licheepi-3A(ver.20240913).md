@@ -82,6 +82,7 @@ libreoffice 版本 4：24.2.0-1deepin2 riscv64
 
 ![内容报错](pictures/41.png)
 
+看上去是从，出现了日志时间回滚、日志占用现象
 
 **问题处理记录**
 
@@ -95,13 +96,13 @@ swapfile size :16G
 
 ![空间占用情况](pictures/43.png)
 
-尝试缩小一下 swapfile 大小
+尝试缩小一下 swapfile 
 
 ![缩小swapfile](pictures/44.png)
 
-检查空间占用情况
+再次检查空间占用情况：
 
-![缩小swapfile](pictures/45.png)
+![缩小swapfile之后的空间占用情况](pictures/45.png)
 
 重新启动，可以正常进入桌面了，串口命令行界面也没有出现日志信息报错了
 
